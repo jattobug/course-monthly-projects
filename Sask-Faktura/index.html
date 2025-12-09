@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVM Sąskaita Faktūra</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="invoice">
+
+    <h1>PVM SĄSKAITA FAKTŪRA</h1>
+
+    <div class="row">
+        <div class="col">
+            <h3>Pardavėjas</h3>
+            <p>
+                UAB „Pavyzdys“<br>
+                Įmonės kodas: 123456789<br>
+                PVM kodas: LT123456789<br>
+                Adresas: Vilniaus g. 1, Vilnius<br>
+                Tel: +370 600 00000
+            </p>
+        </div>
+
+        <div class="col">
+            <h3>Pirkėjas</h3>
+            <p>
+                UAB „Klientas“<br>
+                Įmonės kodas: 987654321<br>
+                PVM kodas: LT987654321<br>
+                Adresas: Kauno g. 10, Kaunas
+            </p>
+        </div>
+    </div>
+
+    <div class="info">
+        <p><strong>Sąskaitos Nr.:</strong> INV-2025-001</p>
+        <p><strong>Sąskaitos data:</strong> 2025-01-10</p>
+        <p><strong>Mokėjimo terminas:</strong> 2025-01-25</p>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Prekė / Paslauga</th>
+            <th>Kiekis</th>
+            <th>Kaina (€)</th>
+            <th>Nuolaida</th>
+            <th>Tarpinė suma (€)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Biuro kėdė</td>
+            <td>2</td>
+            <td>120.00</td>
+            <td>-10.00 €</td>
+            <td>230.00</td>
+        </tr>
+        <tr>
+            <td>Stalas</td>
+            <td>1</td>
+            <td>200.00</td>
+            <td>-10% (-20.00 €)</td>
+            <td>180.00</td>
+        </tr>
+        <tr>
+            <td>Monitorius</td>
+            <td>3</td>
+            <td>150.00</td>
+            <td>—</td>
+            <td>450.00</td>
+        </tr>
+        <tr>
+            <td>Transportavimo išlaidos</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>25.00</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <p><strong>Tarpinė suma:</strong> 885.00 €</p>
+        <p><strong>PVM 21%:</strong> 185.85 €</p>
+        <p class="grand"><strong>Galutinė suma su PVM:</strong> 1,070.85 €</p>
+    </div>
+
+    <div class="footer">
+        <p>Sąskaitą išrašė: _______________________</p>
+    </div>
+
+</div>
+
+</body>
+</html>
