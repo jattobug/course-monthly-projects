@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #76949F, #5F506B);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: lighter;
+    font-style: normal;
+    color: #45313C;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #C9D4D5;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+    align-self: center;
+    background-color: #C9D4D5;
+    color: #45313C;
+    font-family: "Press Start 2P", system-ui;
+    height: 30px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.container {
+    background-color: #98bbbc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 15px;
+}
