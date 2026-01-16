@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(33, 40, 48);
+    color: rgb(201, 213, 223);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+.todoApp {
+    border: 2px solid rgb(98, 116, 131);
+    border-radius: 20px;
+    background-color: rgb(58, 67, 83);
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.taskFormWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskInput {
+  height: 40px;
+  flex: 1;
+  background-color: rgb(27, 34, 39);
+  color: rgb(201, 213, 223);
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(58, 67, 83);
+  outline: none;
+}
+
+.addTaskBtn {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(58, 67, 83);
+  background-color: rgb(27, 34, 39);
+  color: rgb(201, 213, 223);
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.addTaskBtn:hover {
+  background-color: rgb(34, 42, 48);
+}
+
+.addTaskBtn:active {
+  transform: scale(0.95);
+}
+
+.todoContainer {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.taskList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+    width: 100%;
+    background-color: rgb(27, 34, 39);
+    color: rgb(201, 213, 223);
+    padding: 0 18px;
+    border-radius: 12px;
+    border: 1px solid rgb(58, 67, 83);
+    font-size: 1.15rem;
+}
+
+.taskList li .checkbox {
+    width: 22px;
+    height: 22px;
+    accent-color: rgb(201, 213, 223);
+    background-color: rgb(27, 34, 39);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.taskList li span {
+    flex: 1;
+    font-size: 1.15rem;
+    color: rgb(201, 213, 223);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taskButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgb(58, 67, 83);
+    background-color: rgb(27, 34, 39);
+    color: rgb(201, 213, 223);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editBtn:hover,
+.deleteBtn:hover {
+    background-color: rgb(38, 47, 55);
+}
+
+.taskList li input:checked + span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.checkbox {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}

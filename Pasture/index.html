@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My animal farm</h1>
+
+    <div class="form-container">
+        <h2>Add Animal</h2>
+        <form id="animalForm">
+            <label for="type">Type:</label>
+            <select id="type" required>
+                <option value="">Select</option>
+                <option value="sheep">Sheep</option>
+                <option value="duck">Duck</option>
+                <option value="goat">Goat</option>
+            </select>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required min="0">
+
+            <button type="submit">Add Animal</button>
+        </form>
+    </div>
+
+    <ul id="animalList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
